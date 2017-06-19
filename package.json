@@ -1,0 +1,23 @@
+{
+  "name": "codepeace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-formatString.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msolorio/codepeace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msolorio/codepeace/issues"
+  },
+  "homepage": "https://github.com/msolorio/codepeace#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
