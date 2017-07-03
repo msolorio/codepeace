@@ -34,9 +34,30 @@ function allColumnsValid(board) {
   }, true);
 }
 
+function allSubGridsValid(board) {
+  const subGrids = [];
+  // for each 3 row group
+  for (let i=0; i<board.length; i+=3) {
+    for (let j=0; j<board[0].length; j+=3) {
+      const subGrid = [];
+
+      subGrid.push(...board[i].slice(j, j+3));
+      subGrid.push(...board[i+1].slice(j, j+3));
+      subGrid.push(...board[i+2].slice(j, j+3));
+
+      subGrids.push(subGrid);
+    }
+  }
+  
+  return subGrids.reduce((allValid, subGrid) => {
+    if (containsAllDigits(subGrid)) return allValid;
+    return false;
+  }, true);
+}
+
 function validSolution(board) {
 
-  return allRowsValid(board) && allColumnsValid(board);
+  return allRowsValid(board) && allColumnsValid(board) && allSubGridsValid(board);
 }
 
 const board = [
@@ -50,5 +71,7 @@ const board = [
   [2, 8, 7, 4, 1, 9, 6, 3, 5],
   [3, 4, 5, 2, 8, 6, 1, 7, 9]
 ];
+
+// subGridsValid(board);
 
 module.exports = { validSolution };
