@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const { perimeter } = require('../14-perimeter-of-squares-in-a-rectangle');
+const { perimeter } = require('../../codepeace/14-perimeter-of-squares-in-a-rectangle');
 
 describe('perimeter', function() {
   it('should return the correct perimeter of all squares of fibonacci lengths given the number passed in plus one number of squares', function() {

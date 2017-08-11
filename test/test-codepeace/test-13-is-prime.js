@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const { isPrime } = require('../13-is-prime');
+const { isPrime } = require('../../codepeace/13-is-prime');
 
 describe('isPrime', function() {
   it('should return true when given a prime number as an input', function()  {

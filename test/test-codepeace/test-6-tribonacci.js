@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const should = chai.should();
 
-const { getSequence } = require('../6-tribonacci');
+const { getSequence } = require('../../codepeace/6-tribonacci');
 
 describe('getSequence', function() {
   it('should return correct sequence for given input', function() {

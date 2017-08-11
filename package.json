@@ -1,10 +1,20 @@
 {
   "name": "codepeace",
   "version": "1.0.0",
-  "description": "",
-  "main": "1-formatString.js",
+  "description": "solutions and tests for codepeace algorithms [codewars.com](codewars.com)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -15,9 +25,5 @@
   "bugs": {
     "url": "https://github.com/msolorio/codepeace/issues"
   },
-  "homepage": "https://github.com/msolorio/codepeace#readme",
-  "devDependencies": {
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2"
-  }
+  "homepage": "https://github.com/msolorio/codepeace#readme"
 }

@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const should = chai.should();
 
-const { tickets } = require('../8-vasya-clerk');
+const { tickets } = require('../../codepeace/8-vasya-clerk');
 
 describe('tickets', function() {
   it('should return if each person gets change based on the sequence of dollar bills each customer has', function() {

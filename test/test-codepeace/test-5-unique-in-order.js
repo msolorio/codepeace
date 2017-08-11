@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const should = chai.should();
 
-const { uniqueInOrder } = require('../5-unique-in-order');
+const { uniqueInOrder } = require('../../codepeace/5-unique-in-order');
 
 describe('uniqueInOrder', function() {
 

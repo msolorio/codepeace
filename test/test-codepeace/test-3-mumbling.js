@@ -1,7 +1,7 @@
 const chai = require('chai');
 const should = chai.should();
 
-const { accum } = require('../3-mumbling');
+const { accum } = require('../../codepeace/3-mumbling');
 
 describe('accum', function() {
   it('returns proper strings based on inputs', function() {

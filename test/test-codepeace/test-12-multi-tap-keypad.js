@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const { presses } = require('../12-multi-tap-keypad');
+const { presses } = require('../../codepeace/12-multi-tap-keypad');
 
 describe('presses', function() {
   it('should return the proper number of keys pressed for the entered phrase', function() {

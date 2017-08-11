@@ -1,6 +1,6 @@
 // const should = require('chai').should();
 
-// const humanReadable = require('../17-human-readable-time');
+// const humanReadable = require('../../codepeace/17-human-readable-time');
 
 // describe('humanReadable', function() {
 //   it('should return proper time format given seconds input value', function() {

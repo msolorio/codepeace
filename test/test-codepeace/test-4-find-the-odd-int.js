@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const should = chai.should();
 
-const { findOdd } = require('../4-find-the-odd-int');
+const { findOdd } = require('../../codepeace/4-find-the-odd-int');
 
 describe('findOdd', function() {
 

@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const should = chai.should();
 
-const { comp } = require('../9-arent-they-the-same');
+const { comp } = require('../../codepeace/9-arent-they-the-same');
 
 describe('comp', function() {
 

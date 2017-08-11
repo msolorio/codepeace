@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const { zeros } = require('../16-number-of-trailing-zeros');
+const { zeros } = require('../../codepeace/16-number-of-trailing-zeros');
 
 describe('zeros', function() {
   it('should return number of zeros in factorial of given number', function() {

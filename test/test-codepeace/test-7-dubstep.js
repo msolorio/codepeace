@@ -2,7 +2,7 @@ const chai = require('chai');
 
 const should = chai.should();
 
-const { songDecoder } = require('../7-dubstep.js');
+const { songDecoder } = require('../../codepeace/7-dubstep.js');
 
 describe('songDecoder', function() {
   it('should replace "WUB" by one space', function() {

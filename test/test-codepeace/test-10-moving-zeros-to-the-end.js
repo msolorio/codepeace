@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const { moveZeros } = require('../10-moving-zeros-to-the-end.js');
+const { moveZeros } = require('../../codepeace/10-moving-zeros-to-the-end.js');
 
 describe('moveZeros', function() {
   it('should return the original array with zeros moved to the end and with the order of other numbers preserved', function() {

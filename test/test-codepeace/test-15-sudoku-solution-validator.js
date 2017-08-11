@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const { validSolution } = require('../15-sudoku-solution-validator');
+const { validSolution } = require('../../codepeace/15-sudoku-solution-validator');
 
 describe('validSolution', function() {
   it('should return true if board is valid sudoku solution', function() {

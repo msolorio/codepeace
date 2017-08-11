@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const { whoIsNext } = require('../11-double-cola');
+const { whoIsNext } = require('../../codepeace/11-double-cola');
 
 describe('whoIsNext', function() {
   it('should return the name of the person drinking the n-th can of cola', function() {
