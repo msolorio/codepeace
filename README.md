@@ -12,14 +12,15 @@ Solutions and tests for algorithms
 <br/>[freecodecamp.com](freecodecamp.com)
 
 ## Technologies Used
-[Mocha js](https://mochajs.org/)
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+<br/>[ES6](http://es6-features.org/#Constants)
+<br/>[Mocha js](https://mochajs.org/)
 <br/>[Chai js](http://chaijs.com/)
 
 ## Run the Tests
 ```
 git clone git@github.com:msolorio/algorithms.git
 cd algorithms
-npm init
-npm install --save-dev mocha chai
+npm install
 npm test
 ```
