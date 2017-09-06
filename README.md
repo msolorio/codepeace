@@ -10,6 +10,7 @@ Solutions and tests for algorithms
 ## Sources
 [codewars.com](codewars.com)
 <br/>[freecodecamp.com](freecodecamp.com)
+<br/>[hackerrank.com](https://www.hackerrank.com/)
 
 ## Technologies Used
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
