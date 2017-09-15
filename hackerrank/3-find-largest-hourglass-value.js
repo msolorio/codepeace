@@ -54,7 +54,7 @@ function findLargestHourglassValue(grid) {
   // return largest hourglass point value
   return allHourglassPoints.reduce((largestVal, val) => {
     return val > largestVal ? val : largestVal
-  }, 0);
+  }, allHourglassPoints[0]);
 }
 
 module.exports = { findLargestHourglassValue, findHourglassPointVal };
