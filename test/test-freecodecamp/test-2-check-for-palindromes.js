@@ -5,7 +5,7 @@ const expect = chai.expect;
 
 const { checkForPalindrome } = require('../../freecodecamp/2-check-for-palindromes');
 
-describe('checkForPalindrome', function() {
+describe('fcc2 - checkForPalindrome', function() {
 
   it('should return false if input is a falsy value', function() {
     expect(checkForPalindrome()).to.be.false;

@@ -5,7 +5,7 @@ const expect = chai.expect;
 const should = chai.should();
 const findLongestWordInString = require('../../freecodecamp/3-find-the-longest-word-in-a-string');
 
-describe('findLongestWordInString', function() {
+describe('fcc3 - findLongestWordInString', function() {
 
   it('should return a number', function() {
     expect(findLongestWordInString('this is a string')).to.be.a('number');
