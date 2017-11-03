@@ -5,7 +5,7 @@ const expect = chai.expect;
 
 const ipsBetween = require('../../codepeace/21-count-ip-addresses');
 
-describe('ipsBetween', function() {
+describe('cp21 - ipsBetween', function() {
   it('should return error if 2 inputs not provided', function() {
     expect(ipsBetween("10.0.0.1")).to.be.an('error');
     expect(ipsBetween()).to.be.an('error');
