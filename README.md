@@ -6,11 +6,11 @@ Solutions and tests for algorithms
 - practice test driven development
 - because it's fun!
 
-
 ## Sources
-[codewars.com](codewars.com)
-<br/>[freecodecamp.com](freecodecamp.com)
+[codewars.com](https://www.codewars.com/)
+<br/>[freecodecamp.com](https://www.freecodecamp.org/)
 <br/>[hackerrank.com](https://www.hackerrank.com/)
+<br/>[project euler](https://projecteuler.net/)
 
 ## Technologies Used
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
