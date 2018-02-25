@@ -1,6 +1,5 @@
 function presses(phrase) {
   const characters = phrase.toUpperCase().split('');
-  console.log(characters);
 
   const keypad = [
     ['1'],
