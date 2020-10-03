@@ -9,6 +9,8 @@ The available operations are (in this order of preference):
 2) subtraction
 3) multiplication
 4) division
+
+"9 4 5 20 25"  -->  "subtraction, multiplication, addition"
 */
 
 function convertStrToNumsArray(str) {
