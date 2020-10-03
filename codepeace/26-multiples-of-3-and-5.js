@@ -31,14 +31,14 @@ function incrementCategory(totalsArray, integer) {
 function threesAndFives(number) {
   if (typeof number !== 'number') {
     return new TypeError(
-      'input provided threesAndFives was not a number',
+      'input provided to threesAndFives was not a number',
       '26-multiples-of-3-and-5.js'
     );
   }
 
   if (number < 0) {
     return new Error(
-      'input provided tot threesAndFives was a negative number',
+      'input provided to threesAndFives was a negative number',
       '26-multiples-of-3-and-5.js'
     );
   }
