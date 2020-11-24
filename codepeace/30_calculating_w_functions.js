@@ -35,40 +35,32 @@ function performMath(firstNum, secondNum, operation) {
 }
 
 // DYNAMICALLY BUILD NUMBER FUNCTION
-function buildNumFunction(funcName, num) {
-  const obj = {
-    // IF ARGS PASSED PERFORM MATH OPERATION, OTHERWISE RETURN NUM
-    [funcName]: function(arg) {
-      if (arg) return performMath(num, arg.secondNum, arg.operation);
-      return num;   
-    }
+function buildNumFunction(num) {
+  // IF ARGS PASSED PERFORM MATH OPERATION, OTHERWISE RETURN NUM
+  return function(arg) {
+    if (arg) return performMath(num, arg.secondNum, arg.operation);
+    return num;   
   }
-
-  return obj[funcName];
 }
 
 // DYNAMICALLY BUILD OPERATION FUNCTION
 function buildOperationFunc(operationName) {
-  const obj = {
-    // FUNC RETURNS OBJECT WITH OPERATION, AND NUM PASSED IN
-    [operationName]: function(num) {
-      return { operation: operationName, secondNum: num };
-    }
+  // FUNC RETURNS OBJECT WITH OPERATION, AND NUM PASSED IN
+  return function(num) {
+    return { operation: operationName, secondNum: num };
   }
-
-  return obj[operationName];
 }
 
-const zero = buildNumFunction('zero', 0);
-const one = buildNumFunction('one', 1);
-const two = buildNumFunction('two', 2);
-const three = buildNumFunction('three', 3);
-const four = buildNumFunction('four', 4);
-const five = buildNumFunction('five', 5);
-const six = buildNumFunction('six', 6);
-const seven = buildNumFunction('seven', 7);
-const eight = buildNumFunction('eight', 8);
-const nine = buildNumFunction('nine', 9);
+const zero = buildNumFunction(0);
+const one = buildNumFunction(1);
+const two = buildNumFunction(2);
+const three = buildNumFunction(3);
+const four = buildNumFunction(4);
+const five = buildNumFunction(5);
+const six = buildNumFunction(6);
+const seven = buildNumFunction(7);
+const eight = buildNumFunction(8);
+const nine = buildNumFunction(9);
 
 const plus = buildOperationFunc('plus');
 const minus = buildOperationFunc('minus');
