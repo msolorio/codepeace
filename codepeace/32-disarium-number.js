@@ -25,5 +25,7 @@ function isDisarium(num) {
   .map(char => Number(char));
   
   // ITERATE, ACCUMULATING THE SUM OF ALL NUMS TO THE POWER OF THEIR POSITION
-  return numsArray.reduce((acc, num, index) => acc + (num**(index + 1)));
+  const sum = numsArray.reduce((acc, num, index) => acc + (num**(index + 1)));
+
+  return sum === num ? 'Disarium !!' : 'Not !!';
 }
