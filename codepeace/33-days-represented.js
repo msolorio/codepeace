@@ -16,26 +16,36 @@ Returns 16 because there are two trips of 8 days, which add up to 16.
 // Takes in an array of trip days and returns total number of days during the year employees
 // have been on trips. 
 function calculateDays(trips) {
-  if (!Array.isArray(trips)) {
-    return 'Function input must be an array';
-  }
+  const uniqueDays = trips.reduce((set, trip) => {
+    for (let i = trip[0]; i <= trip[1]; i++) set.add(i);
+    return set;
+  }, new Set());
 
-  // get array of unique days
-  const uniqueDays = trips.reduce((acc, trip) => {
-    if (!Array.isArray(trip)) {
-      return 'Each trip in trips array must be an array.';
-    }
-
-    if ((typeof trip[0]) !== 'number' || (typeof trip[1]) !== 'number') {
-      return 'Each trip must be an array containing 2 numbers.'
-    }
-
-    for (let i = trip[0]; i <= trip[1]; i++) {
-      if (!acc.includes(i)) acc.push(i);
-    };
-
-    return acc;
-  }, []);
-
-  return Array.isArray(uniqueDays) ? uniqueDays.length : uniqueDays;
+  return uniqueDays.size;
 }
+
+// function calculateDays(trips) {
+//   if (!Array.isArray(trips)) {
+//     return 'Function input must be an array';
+//   }
+
+//   // get array of unique days
+//   const uniqueDays = trips.reduce((acc, trip) => {
+//     if (!Array.isArray(trip)) {
+//       return 'Each trip in trips array must be an array.';
+//     }
+
+//     if ((typeof trip[0]) !== 'number' || (typeof trip[1]) !== 'number') {
+//       return 'Each trip must be an array containing 2 numbers.'
+//     }
+
+//     for (let i = trip[0]; i <= trip[1]; i++) {
+//       if (!acc.includes(i)) acc.push(i);
+//     };
+
+//     return acc;
+//   }, []);
+
+//   return Array.isArray(uniqueDays) ? uniqueDays.length : uniqueDays;
+// }
+
