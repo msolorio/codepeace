@@ -22,8 +22,9 @@ top_3_words("  //wont won't won't")
 # => ["won't", "wont"]
 */
 
+// FIND 3 MOST FREQUENT WORDS IN STRING OF TEXT
 function findFrequentWords(text) {
-  // REMOVE ALL NON-ALPHANUMERIC, SPACES, AND APOSTROPHES
+  // REMOVE ALL NON-ALPHANUMERIC, NON-SPACES, AND NON-APOSTROPHES
   const wordsString = text.replace(/[^0-9a-zA-Z\s']/gi, '');
 
   // GET ARRAY OF LOWERCASE WORDS
